@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login";
 import { AuthProvider } from "./context/AuthContext";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Router>
         <AuthProvider>
           <Switch>
+            <Route path="/chats" component={Chat} />
             <Route path="/" component={Login} />
           </Switch>
         </AuthProvider>
