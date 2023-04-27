@@ -67,11 +67,11 @@ export default function Chat() {
   }
 
   return (
-    <div className="">
-      <div className="">
-        <div className="">Chat - App</div>
+    <div className="chats-page">
+      <div className="nav-bar">
+        <div className="logo-tab">Chat - App</div>
 
-        <div onClick={handleLogout} className="">
+        <div onClick={handleLogout} className="logout-tab">
           Logout
         </div>
       </div>
